@@ -1,6 +1,6 @@
 # djupvikshamn
 
-Ett avslutande projekt som gjordes i kursen" Dynamiska webbapplikationer" som jag blev riktigt nöjd med. Vi fick utveckla sajten fritt, det vi fick var text som skulle presenteras via HTML, CSS och JavaScript.
+Ett avslutande projekt som gjordes i kursen "Dynamiska webbapplikationer" som jag blev riktigt nöjd med. Vi fick utveckla sajten fritt, det vi fick var text som skulle presenteras via HTML, CSS och JavaScript.
 
 ## information
 
