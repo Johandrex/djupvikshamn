@@ -1,5 +1,9 @@
 # djupvikshamn
 
+Ett avslutande projekt som gjordes i kursen" Dynamiska webbapplikationer" som jag blev riktigt nöjd med. Vi fick utveckla sajten fritt, det vi fick var text som skulle presenteras via HTML, CSS och JavaScript.
+
+# information
+
 HTML, CSS och JavaScript är validerat och det finns ingen duplicerad kod, bara snygg kod.
 Level AAA har uppnåts, achecker.ca ger bara två felmeddelande som jag är felaktigt.
 
