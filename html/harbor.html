@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Djupvikshamn - Gästhamn</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Behöver du ha en plats att parkera din båt på? Se priser och kontaktuppgifter för mer information." />
+        <meta name="author" content="Johannes Seldevall" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="../css/weather.css" />
+        <script src="../js/menu.js"></script>
+        <script type="module" src="../js/copyright.js"></script>
+        <script type="module" src="../js/weather.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Djupvikshamn</h1>
+            <nav id="headerMenu">
+                <ul>
+                    <li id="language"><a href="english.html"><img src="../images/flagga_engelsk.png" alt="link to english version"></a></li> <!-- Ej inkluderad i listan -->
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="#">Gästhamn</a></li>
+                    <li><a href="attractions.html">Sevärdheter</a></li>
+                    <li><a href="history.html">Historia</a></li>
+                    <li><a href="association.html">Förening</a></li>
+                    <li><a href="contact.html">Kontakta oss</a></li>
+                    <li><a href="javascript:void(0);" class="icon" id="menuButton" onclick="menu()">MENY</a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <main>
+                <section>
+                    <h2>Gästhamnen</h2>
+                    <p>
+                        Gästbåtar är hjärtligt välkomna! 
+
+                        <br />Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten och el finns utdraget på kajerna. I land kan vi erbjuda ett modernt servicehus med WC, dusch och tvättmaskin.
+                        
+                        <br /><br />Ring gärna hamnfogden för att få reda på aktuellt läge.
+                        <br />Dygnshyra 150:- /dygn* 
+                        <br />El-anslutning 50:-/dygn 
+                        
+                        <br /><br />*inkluderat kort för tillträde till servicehuset och 20:- för två duschar
+                        
+                        <br /><br /><a href="tel:+46-707-920310">Hamnfogde Bo Lautin, mobil: 0707-920310</a>
+                    </p>
+                </section>
+            </main>
+    
+            <aside>
+                <section>
+                    <h2>Väder</h2>
+
+                    <h3>Idag</h3>
+                    <table id="smhi-today" class="smhi">
+                        <thead>
+                            <tr>
+                                <th>KL</th>
+                                <th>Temp</th>
+                                <th>Vind</th>
+                                <th>Himmel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Här sätter JavaScript in rows -->
+                        </tbody>
+                    </table>
+
+                    <h3>Imorgon</h3>
+                    <table id="smhi-tomorrow" class="smhi">
+                        <thead>
+                            <tr>
+                                <th>KL</th>
+                                <th>Temp</th>
+                                <th>Vind</th>
+                                <th>Himmel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Här sätter JavaScript in rows -->
+                        </tbody>
+                    </table>
+                </section>
+            </aside>
+        </div>
+
+        <footer>
+            <p>
+                &copy; Copyright 2019 | Djupvikshamn.se  <!-- JavaScript uppdaterar året automatiskt varje år -->
+                <br /><a href="mailto:info@djupvikshamn.se">Mail: info@djupvikshamn.se</a>
+            </p>
+        </footer>
+    </body>
+</html>

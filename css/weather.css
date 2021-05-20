@@ -1,0 +1,30 @@
+/********** WEATHER.CSS, hanterar väderboxens utseende **********/
+/* FRÅN UPPGIFTSBESKRIVNINGEN: Link taggen för att ladda in din CSS fil rörande din JS lösning. (CSS’en för väder widgeten bör alltså vara skild ifrån resterande CSS på din sajt) */
+.smhi {
+    margin: 1rem;
+    width: 95%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.smhi tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+.smhi tr:nth-child(odd) {
+    background-color: #ffff;
+}
+
+.smhi thead, .smhi th {
+    font-weight: bold;
+    background-color: #e7e7e7;
+}
+
+.smhi td, .smhi th {
+    padding: 5px;
+}
+
+/* Pilarna som visar vindens riktning */
+#smhi-arrow0, #smhi-arrow1, #smhi-arrow2, #smhi-arrow3, #smhi-arrow4, #smhi-arrow5, #smhi-arrow6 {
+    color: rgb(199, 0, 0);
+    display: inline-block
+}

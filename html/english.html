@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Djupvikshamn - English</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="The Port of Djupvik offers a beutiful fishing place on Gotland. There's also hotel, attractions, food, spa and gym. Welcome to the Port of Djupvik!" />
+        <meta name="author" content="Johannes Seldevall" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="../css/weather.css" />
+        <script src="../js/menu.js"></script>
+        <script type="module" src="../js/copyright.js"></script>
+        <script type="module" src="../js/weather.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Djupvikshamn</h1>
+            <nav id="headerMenu">
+                <ul>
+                    <li id="language"><a href="../index.html"><img src="../images/flagga_svensk.png" alt="länk till den svenska versionen"></a></li> <!-- Ej inkluderad i listan -->
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="harbor.html">Gästhamn</a></li>
+                    <li><a href="attractions.html">Sevärdheter</a></li>
+                    <li><a href="history.html">Historia</a></li>
+                    <li><a href="association.html">Förening</a></li>
+                    <li><a href="contact.html">Kontakta oss</a></li>
+                    <li><a href="javascript:void(0);" class="icon" id="menuButton" onclick="menu()">MENY</a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <main>
+                <section>
+                    <h2>Welcome to Djupvikshamn!</h2>
+                    <p>
+                        The Port of Djupvik is located on the east coast of Gotland very close to the beautiful smaller island Lilla Karlsö. Adjacent to the port is a small and charming fishing-village which, during summer, comes to life with a relaxed and welcoming buzz.
+                        Close by and situated with a fantastic view over the port is Djupvik Hotel, with modern standard and with its own popular restaurant.
+                        Both the port and the fishing village have a beautiful view of two popular bird islands called “Lilla Karlsö” and “Stora Karlsö”.
+                        The coastline south of Djupvik, called “Ekstakusten” is incredibly beautiful and invites to nice scenery and views on foot, by bike or by car.
+                        North, and connected to the port, is a small sandy beach which is well soothed for a nice swim.
+                        The distance from the port to Lilla Karlsö is about 2 nautical miles and it is about twice as long to Stora Karlsö (4nm).
+                        
+                        <br /><br />For more information, check out the websites: <a href="http://lillakarlso.org/">lillakarlso.org - swedens little bird island</a> and <a href="http://www.storakarlso.se/">storakarlso.se - swedens big bird island</a>. For information about Djupvik Hotel: <a href="http://djupvikhotel.com/">djupvikhotel.com - room and food</a>
+                        Are you interested of visiting Djupvik by boat? The 24 hour rate is 150 sek including key to the service house and a 20 sek fee to the two showers. A connection to the electricity is an additional 50 sek / 24 hour.
+                        
+                        <br /><br />Please contact the port manager for more inquiries: <a href="tel:+46-707-920310">Bo Lautin, cellnr: +46-707-920310</a>
+                    </p>
+                </section>
+            </main>
+    
+            <aside>
+                <section>
+                    <h2>Weather</h2>
+
+                    <h3>Today</h3>
+                    <table id="smhi-today" class="smhi">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Temp</th>
+                                <th>Wind</th>
+                                <th>Sky</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Här sätter JavaScript in rows -->
+                        </tbody>
+                    </table>
+
+                    <h3>Tomorrow</h3>
+                    <table id="smhi-tomorrow" class="smhi">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Temp</th>
+                                <th>Wind</th>
+                                <th>Sky</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Här sätter JavaScript in rows -->
+                        </tbody>
+                    </table>
+                </section>
+            </aside>
+        </div>
+
+        <footer>
+            <p>
+                &copy; Copyright 2019 | Djupvikshamn.se  <!-- JavaScript uppdaterar året automatiskt varje år -->
+                <br /><a href="mailto:info@djupvikshamn.se">Mail: info@djupvikshamn.se</a>
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,247 @@
+/********** STYLE.CSS, css för alla sidor **********/
+/********** ELEMENT **********/
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+/* HTML */
+html {
+    height: 100%;
+    color: rgb(55, 55, 55); /* text color */
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+/* BODY */
+body {
+    line-height: 150%;
+    background: url(../images/background_small.jpg) fixed no-repeat;
+}
+
+/* MAIN */
+main {
+    width: 70%;
+}
+
+/* ASIDE */
+aside {
+    position: sticky;
+    top: 10px;
+    width: 27%;
+    height: max-content;
+}
+
+/* HEADER */
+h1, h2, h3 {
+    font-weight: bolder;
+    font-size: 120%;
+    background: rgb(55, 55, 55);
+    color: rgb(240, 240, 240);
+    padding: 1rem;
+    text-align: center;
+}
+
+h3 { /* override det ovanför */
+    font-size: 100%;
+    background: rgb(31, 31, 31);
+    padding: 0.2rem;
+}
+
+header {
+    background: rgb(55, 55, 55);
+    padding: 1rem 0rem 0rem;
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(0, 191, 255);
+    font-family: 'Lobster', cursive;
+    font-size: 250%;
+    text-shadow: 1px 2px black;
+    padding-bottom: 2rem;
+}
+
+/* LÄNKAR */
+a, a:visited {
+    text-decoration: none;
+    color: rgb(0, 44, 187)
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem;
+    bottom: 0;
+    color: white;
+    background-color: rgb(55, 55, 55);
+    text-align: center;
+}
+
+footer a, footer a:visited {
+    text-decoration: underline;
+    color: #2ad7ff;
+}
+
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* DEFINITIONSLISTA */
+dl {
+    padding: 1rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 2rem;
+}
+
+/* SECTION, ARTICLE & FIGURE */
+article, section {
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(75, 75, 75, 0.1);
+    overflow: hidden /* för att inkludera hela bilden i elementet */
+}
+
+article p, section p {
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+
+figure {
+    padding: 1rem;
+    padding-top: 0.5rem;
+    float: left;
+}
+
+figure figcaption {
+    text-decoration: underline;
+}
+
+/********** CLASS & ID **********/
+/* WRAPPER, runt sidans innehåll */
+.wrapper {
+    min-height: 100vh;
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Kontaktformen */
+form {
+    border-radius: 5px;
+    width: max-content;
+    margin: 0px auto;
+    margin-bottom: 2rem;
+}
+
+fieldset {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0px auto;
+}
+
+fieldset input, fieldset select {
+    width: 100%;
+}
+
+fieldset textarea {
+    width: 100%;
+    height: 200px;
+}
+
+/********** SCREENS **********/
+/* Detta är för att sätta in en större backgrunds-bild för stora skärmar med över 1500 pixlar */
+@media only screen and (min-width: 1500px)  {
+    body {
+        background: url(../images/background_large.jpg) fixed no-repeat;
+    }
+}
+
+/* För sjukt stora skärmar (mer än 2560px, ta bort bakgrundsbild) */
+@media only screen and (min-width: 2560px)  {
+    body {
+        background: #d3f9ff;
+    }
+}
+
+/* PADDA, mellan 768px till 1080px, (min-width: behöver (och borde) inte anges) */
+@media only screen and (max-width: 1080px)  {
+    /* Göm backgrundsbild vid paddor o mindre */
+    body {
+        background: #d3f9ff;
+    }
+
+    .wrapper {
+        width: 90%;
+        display: block;
+    }
+
+    /* MAIN */
+    main {
+        width: auto;
+    }
+
+    /* ASIDE */
+    aside {
+        width: auto;
+    }
+}
+  
+/* PHONES, mellan 320px (0px) och 768px */
+@media only screen and (max-width: 768px) {
+    fieldset {
+        width: 300px;
+    }
+
+    figure {
+        padding: 0rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        width: 100%; /* flytta ner texten, förstorar ej bilden */
+    }
+
+    figure figcaption {
+        text-align: center;
+    }
+
+    figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* PHONES, very small telefoner. mellan 320px (0px) och 450px */
+@media only screen and (max-width: 450px) {
+    .wrapper {
+        width: 100%;
+        padding: 1rem 0px;
+    }
+
+    fieldset {
+        width: 250px;
+    }
+
+    article p, section p {
+        padding: 0.25rem;
+    }
+}

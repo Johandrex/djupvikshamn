@@ -1,0 +1,37 @@
+/********** ASSOCIATION.CSS, föreningens tabell **********/
+#association {
+    margin: 1rem;
+    width: 95%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#association tr:nth-child(even) {
+    background-color: #d3f9ff;
+}
+#association tr:nth-child(odd) {
+    background-color: #ffff;
+}
+
+#association thead, #association th {
+    font-weight: bold;
+    background-color: #d3f9ff;
+}
+
+#association td, #association th {
+    border: 1px solid rgb(161, 161, 161);
+    padding: 5px;
+}
+
+/* PHONES, very small telefoner. mellan 320px (0px) och 400px */
+@media only screen and (max-width: 400px) {
+    #association {
+        margin: 0rem;
+        width: 100%;
+    }
+
+    #association td, #association th {
+        padding: 1px;
+        font-size: 80%;
+    }
+}

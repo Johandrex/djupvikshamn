@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Djupvikshamn - Kontakta oss</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Här kan du kontakta vår styrelse, ring, mejla eller fyll i ett formulär för att kontakta oss." />
+        <meta name="author" content="Johannes Seldevall" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+        <script src="../js/menu.js"></script>
+        <script type="module" src="../js/copyright.js"></script>
+        <script src="../js/contact_form.js"></script> <!-- För kontaktformen -->
+    </head>
+    <body>
+        <header>
+            <h1>Djupvikshamn</h1>
+            <nav id="headerMenu">
+                <ul>
+                    <li id="language"><a href="english.html"><img src="../images/flagga_engelsk.png" alt="link to english version"></a></li> <!-- Ej inkluderad i listan -->
+                    <li><a href="../index.html">Start</a></li>
+                    <li><a href="harbor.html">Gästhamn</a></li>
+                    <li><a href="attractions.html">Sevärdheter</a></li>
+                    <li><a href="history.html">Historia</a></li>
+                    <li><a href="association.html">Förening</a></li>
+                    <li><a href="#">Kontakta oss</a></li>
+                    <li><a href="javascript:void(0);" class="icon" id="menuButton" onclick="menu()">MENY</a>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <main>
+                <section>
+                    <h2>Kontaktformulär</h2>
+                    <p>
+                        Skicka ett meddelande så återkommer vi så snabbt som möjligt!
+                        <br />Du kan alternativt ringa Bo Lautin, telefonnummer hittar ni under "Kontaktuppgifter" boxen.
+                    </p>
+
+                    <!-- Sköts via JavaScript -->
+                    <form id="contact" method="post" name="contact">
+                        <fieldset>
+                            <legend>Meddelande</legend>
+
+                            <p>
+                                <label for="messageTitle">Rubrik:</label>
+                                <br /><input type="text" id="messageTitle" name="messageTitle" required/>
+                            </p>
+
+                            <p>
+                                <label for="messageContent">Meddelande:</label>
+                                <br /><textarea name="messageContent" id="messageContent" required></textarea>
+                            </p>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Ärende</legend>
+
+                            <p>
+                                <label for="ticketAbout">Vad gäller ärendet?</label><br />
+                                <select id="ticketAbout" name="ticketAbout">
+                                    <option value="Båtplats">Båtplats</option>
+                                    <option value="Medlem">Medlem</option>
+                                    <option value="Övrigt">Övrigt</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="ticketMethod">Hur vill du kontaktas?</label><br />
+                                <select id="ticketMethod" name="ticketMethod">
+                                    <option value="Email" selected>Email</option>
+                                    <option value="Telefon">Telefon</option>
+                                    <option value="Vill ej kontaktas">Vill ej kontaktas</option>
+                                </select>
+                            </p>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Kontaktuppgifter</legend>
+                            <p>(krävs inte ifall du inte vill bli kontaktad)</p>
+
+                            <p>
+                                <label for="contactName">Namn:</label>
+                                <br /><input type="text" id="contactName" name="contactName"
+                                placeholder="Förnamn Efternamn" />
+                            </p>
+        
+                            <p>
+                                <label for="contactEmail">Email:</label>
+                                <br /><input type="email" name="contactEmail" id="contactEmail"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="min@mejladress.com" />
+                            </p>
+        
+                            <p>
+                                <label for="contactPhone">Mobilnummer:</label>
+                                <br /><input type="tel" name="contactPhone" id="contactPhone"
+                                pattern="[0-9]{10,15}" placeholder="0702932345" />
+                            </p>
+                        </fieldset>
+        
+                        <p> <!-- Skicka eller reseta -->
+                            <!-- <input type="submit" value="Skicka Meddelande" /> -->
+                            <button type="submit" onclick="submitForm()" value="Submit">Skicka Meddelande</button>
+                            <button type="reset" value="Reset">Återställ Formuläret</button>
+                        </p>
+                    </form>
+                </section>
+            </main>
+    
+            <aside>
+                <section>
+                    <h2>Kontaktuppgifter</h2>
+                    <p>
+                        <a href="tel:+46-707-920310">Hamnfogde Bo Lautin, mobil: 0707-920310</a>
+
+                        <br /><br />Djupviks hamnförening
+                        <br />c/o Ekholm
+                        <br />Eksta Hägur 170
+                        <br />623 54 Klintehamn
+                    </p>
+                </section>
+            </aside>
+        </div>
+
+        <footer>
+            <p>
+                &copy; Copyright 2019 | Djupvikshamn.se  <!-- JavaScript uppdaterar året automatiskt varje år -->
+                <br /><a href="mailto:info@djupvikshamn.se">Mail: info@djupvikshamn.se</a>
+            </p>
+        </footer>
+    </body>
+</html>
